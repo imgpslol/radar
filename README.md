@@ -1,6 +1,6 @@
 <h2>Radar</h2>
 
-A simple network port scanner written in Nim. This program allows you to scan a specific IP address and check which ports are open, with the ability to choose from different scanning modes.
+Radar is a simple network port scanner written in Nim. This program allows you to scan a specific IP address and check which ports are open, with the ability to choose from different scanning modes.
 Features
 
     Scan specific ports or a range of common ports.
@@ -14,22 +14,22 @@ Prerequisites
 
 Compiling the Program
 
-    Download or copy the Nim Port Scanner program to your computer.
+    Git clone or copy the Radar (The nim Port Scanner) to your computer.
 
-    Open a terminal (or command prompt).
+    Open a terminal.
 
-    Navigate to the folder where you saved the Nim Port Scanner program.
+    Navigate to the folder where you saved Radar.
 
     Run the following command to compile the program:
   
     nim compile --run radar.nim
     
-    This will compile and immediately run the program.
+    This will then compile and you will be able to immediately run radar.
 
 
-How to Use the Program
+How to Radar
 
-Once the program is running, it will ask you to provide an IP address and choose a scanning flag. Here's how to use it:
+Once Radar is running, it will ask you to provide an IP address and choose a scanning flag. Here's how to use it:
 Basic Flow
 
     Enter the IP address to scan.
