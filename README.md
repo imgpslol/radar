@@ -14,11 +14,7 @@ Prerequisites
 
 Compiling the Program
 
-    Git clone or copy the Radar (The nim Port Scanner) to your computer.
-
-    Open a terminal.
-
-    Navigate to the folder where you saved Radar.
+    Git clone or manually copy Radar's source code into a folder on your machine and navigate to it in the terminal
 
     Run the following command to compile the program:
   
