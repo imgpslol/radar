@@ -39,5 +39,11 @@ Basic Flow
         -udp: UDP scan (scans common UDP ports like 53, 67, 111, 161, 162).
         -tcp: TCP scan (scans common TCP ports like 22, 25, 53, 70, 80, 113, 443).
         -all: Full scan (scans a wide range of common ports: 20, 21, 22, 23, 25, 53, 67, 80, 443, 110, 135, 139, 445, 1433, 3306, 3389, 8080).
-    Optionally, enable verbose mode to get more detailed information about each connection attempt. You will be asked if you want verbose output.
+    Optionally, enable ve![Screenshot 2024-12-07 204233](https://github.com/user-attachments/assets/758a88fb-141f-4702-b02f-4718f8154a46)
+rbose mode to get more detailed information about each connection attempt. You will be asked if you want verbose output. (Currently working on implementing verbose out better)
+
+![Screenshot 2024-12-07 204233](https://github.com/user-attachments/assets/21b5619f-cdc9-45de-9a31-99877accd9d8)
+
+
+    
     
