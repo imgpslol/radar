@@ -1,11 +1,11 @@
 import os, strutils, sequtils, net
 
-# Helper function to print messages if verbose mode is enabled
+# Helper to print messages if verbose mode is enabled - TODO: fix Verbose mode, it does not work in this version as I'm still trying to fix and clean output
 proc verbosePrint(verbose: bool, msg: string) =
   if verbose:
     echo msg
 
-# Function that tries to connect to a given IP and port
+# tries to connect to a given IP and port
 # It will report whether the port is open or closed
 proc scanPort(ip: string, port: int, verbose: bool) =
   try:
@@ -22,13 +22,13 @@ proc scanPort(ip: string, port: int, verbose: bool) =
     verbosePrint(verbose, "Error connecting to port " & $port & " on " & ip)
     echo "Port ", port, " is closed on ", ip, ": ", e.msg  # Print the error if port is closed or blocked
 
-# Function to go through a list of ports and scan them on a given host
+# goes through a list of ports and scan them on a given host
 proc scanHost(ip: string, ports: seq[int], verbose: bool) =
   echo "Starting scan on host: ", ip
   for port in ports:
     scanPort(ip, port, verbose)
 
-# Function to process the user input, including IP, ports, and flags
+# processes the user input, including IP, ports, and flags
 proc parseFlagsAndInput(verbose: bool) =
   # Ask user for the IP address to scan
   echo "Enter the IP address to scan (e.g., 127.0.0.1:80 (multiple ports can be set with commas) or just 127.0.0.1): "
@@ -38,7 +38,7 @@ proc parseFlagsAndInput(verbose: bool) =
   var ports: seq[int] = @[]
   var scanFlag = ""
 
-  # If user provided a port, split the input to get IP and ports
+  # If user provided a port then split the input to get IP and ports
   if ':' in userInput:
     let parts = userInput.split(":")
     ip = parts[0]
