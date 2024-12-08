@@ -6,13 +6,12 @@ Features
     Scan specific ports or a range of common ports.
     Verbose mode to show more details during the scan.
     Easy to use with command-line flags.
-
-How to Compile and Run
-Prerequisites
+    
+Prerequisites to compile:
 
     You must have Nim installed on your machine. If you don’t have it installed, follow the instructions on Nim's official website to install it.
 
-Compiling the Program
+How to Compile the Program:
 
     Git clone or manually copy Radar's source code into a folder on your machine and navigate to it in the terminal
 
@@ -23,7 +22,7 @@ Compiling the Program
     This will then compile and you will be able to immediately run radar.
 
 
-How to Radar
+How to use Radar:
 
 Once Radar is running, it will ask you to provide an IP address and choose a scanning flag. Here's how to use it:
 Basic Flow
